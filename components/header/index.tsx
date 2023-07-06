@@ -7,7 +7,7 @@ import useMediaQuery from "../../hooks/useMediaQuery"
 
 const Header = () => {
 
-	const mobile: boolean = useMediaQuery("(max-width: 1200px)");
+	const mobile: boolean = useMediaQuery("(max-width: 768px)");
 
 	return (
 		<header className={styles.wrapper}>
@@ -18,11 +18,12 @@ const Header = () => {
 
 				<div className={styles.phone}>
 					{
-						!mobile
-							? <Link href={'tel:+74954954954'}>+7 (495) 495-49-54</Link>
-							: <Link href={'tel:+74954954954'}>
+						mobile
+							? <Link href={'tel:+74954954954'}>
 								<Image width={24} height={24} src={"/phone.svg"} alt={"phone"} />
 							</Link>
+							: <Link href={'tel:+74954954954'}>+7 (495) 495-49-54</Link>
+
 					}
 				</div>
 			</div>

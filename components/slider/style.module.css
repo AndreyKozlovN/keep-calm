@@ -1,10 +1,4 @@
-.main {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 .wrapper {
-  margin-top: 200px;
 }
 
 .title {
@@ -19,11 +13,13 @@
   text-align: left;
 }
 
-@media screen and (max-width: 1200px) {
-  .wrapper {
-    margin-top: 75px;
-  }
+.item {
+  width: 320px;
+  height: 490px;
+  background-color: blueviolet;
+}
 
+@media screen and (max-width: 1200px) {
   .title {
     font-family: Orchidea Pro;
     font-size: 24px;

@@ -2,6 +2,7 @@ import Header from "@/components/header"
 import TextBlock from "@/components/textBlock"
 import styles from './page.module.css'
 import Footer from "@/components/footer";
+import PageSlider from "@/components/slider";
 
 const defaultTitle = `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
   defaultDescription = `<p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -27,7 +28,7 @@ export default function Home() {
             title={defaultTitle}
             description={defaultDescription} />
 
-          <div>Слайдер</div>
+          <PageSlider title={"Lorem ipsum dolor sit amet"} />
 
           <h2 className={styles.title}>ut aliquip ex ea commodo consequat</h2>
 
