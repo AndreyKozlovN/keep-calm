@@ -1,0 +1,48 @@
+.wrapper {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(0deg, #464341 0%, #010101 100%);
+}
+
+.container {
+  max-width: 1400px;
+  padding: 35px 0 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  width: 215px;
+  height: 36px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    height: 60px;
+  }
+  .container {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    width: 118px;
+    height: 20px;
+  }
+}
