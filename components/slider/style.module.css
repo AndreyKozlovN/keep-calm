@@ -14,6 +14,10 @@
   margin-right: calc((100vw - 1395px) * -0.5);
 }
 
+.withoutMarginLeft {
+  margin-left: calc((100vw - 1395px) * -0.5);
+}
+
 .image {
   position: relative;
   width: 320px;
@@ -33,5 +37,15 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 0px 20px;
+    margin-top: 70px;
+  }
+
+  .sliderWrapper {
+    margin-right: 0px;
+  }
+
+  .image {
+    width: 225px;
+    height: 345px;
   }
 }
