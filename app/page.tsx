@@ -2,7 +2,11 @@ import Header from "@/components/header"
 import TextBlock from "@/components/textBlock"
 import styles from './page.module.css'
 import Footer from "@/components/footer";
-import SliderComponent from "@/components/slider";
+
+import dynamic from 'next/dynamic'
+const SliderComponent = dynamic(() => import("@/components/slider"), {
+  ssr: false,
+})
 
 const defaultTitle = `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
   defaultDescription = `<p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>

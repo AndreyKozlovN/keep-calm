@@ -39,6 +39,7 @@ const images = [
 const SliderCarousel = () => {
   const mobile = useMediaQuery("(max-width: 768px)");
   const scrollDir = useDetectScroll({});
+
   const [componentRef, isVisibleComponentRef] = useInView({
     threshold: 1,
     rootMargin: "0px 0px 0px 0px",
